@@ -14,4 +14,18 @@ def pedir():
        
 pedir()
 print(lista)
- 
+
+def ordenar():
+    lista.sort()
+    pares = []
+    impares = []
+    for i in lista:
+        if i % 2 == 0:
+            pares.append(i)
+        else:
+            impares.append(i)
+    print(pares)
+    print(impares)
+    
+    pedir()
+    ordenar()
