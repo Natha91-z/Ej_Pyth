@@ -15,9 +15,16 @@ class A():
     def contador(self):
         return self.__contador
     
+    @contador.setter
+    def contador(self, contador):
+        self._contador = contador
+    
 a = A()
 print(a.cuenta)
 a.cuenta = 20
 print(a.cuenta)
 print(a.contador)
+a.contador = 10
+print(a.contador)
+
     
